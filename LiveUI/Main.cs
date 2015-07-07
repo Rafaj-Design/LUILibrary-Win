@@ -9,5 +9,10 @@ namespace LiveUI
     public class Main
     {
         public string apiKey { get; set; }
+
+        public void update()
+        {
+            //Translations.Translations
+        }
     }
 }

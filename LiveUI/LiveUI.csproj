@@ -109,8 +109,12 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Languages\Languages.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Networking\Networking.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Translations\Translations.cs" />
+    <Compile Include="Visuals\Visuals.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -125,10 +129,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Translations\" />
-    <Folder Include="Visuals\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
