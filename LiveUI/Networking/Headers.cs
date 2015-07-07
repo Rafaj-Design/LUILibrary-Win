@@ -30,9 +30,9 @@ namespace LiveUI.Networking
             client.DefaultRequestHeaders.Add("X-DeviceBatteryStatus", Battery.Plugin.CrossBattery.Current.Status.ToString());
             client.DefaultRequestHeaders.Add("X-DeviceBatteryLevel", Battery.Plugin.CrossBattery.Current.RemainingChargePercent.ToString());
             //client.DefaultRequestHeaders.Add("X-XXXXXXXX", Connectivity.Plugin.CrossConnectivity.Current.);
-            client.DefaultRequestHeaders.Add("X-XXXXXXXX", Version.Plugin.CrossVersion.Current.Version);
-            client.DefaultRequestHeaders.Add("X-XXXXXXXX", Version.Plugin.CrossVersion.Current.Version);
-            client.DefaultRequestHeaders.Add("X-XXXXXXXX", Version.Plugin.CrossVersion.Current.Version);
+            //client.DefaultRequestHeaders.Add("X-XXXXXXXX", Version.Plugin.CrossVersion.Current.Version);
+            //client.DefaultRequestHeaders.Add("X-XXXXXXXX", Version.Plugin.CrossVersion.Current.Version);
+            //client.DefaultRequestHeaders.Add("X-XXXXXXXX", Version.Plugin.CrossVersion.Current.Version);
         }
 
     }
