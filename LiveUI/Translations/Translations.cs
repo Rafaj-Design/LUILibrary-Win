@@ -9,15 +9,33 @@ namespace LiveUI.Translations
     class Translations
     {
 
-        static Translations()
-        {
-            Translations.Instance = new Translations();
-        }
+        private static volatile Translations instance;
+        private static object syncRoot = new Object();
+
+        private Translations() { }
 
         public static Translations Instance
         {
-            get;
-            private set;
+            get
+            {
+                if (instance == null)
+                {
+                    lock (syncRoot)
+                    {
+                        if (instance == null)
+                        {
+                            instance = new Translations();
+                        }
+                    }
+                }
+
+                return instance;
+            }
+        }
+
+        public void update()
+        {
+
         }
 
     }

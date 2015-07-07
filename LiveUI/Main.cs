@@ -12,7 +12,7 @@ namespace LiveUI
 
         public void update()
         {
-            //Translations.Translations
+            Translations.Translations.Instance.update();
         }
     }
 }
